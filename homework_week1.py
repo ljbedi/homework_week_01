@@ -101,15 +101,28 @@ print(avril_even_numbers)
 # So we need the loop to check for even? number % 2 == 0. if they are even then add to our list of even numbers, list 
 # them together and then print them off 
 
-
-
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
+# users.append(["Erik"]["lottery_numbers"][1], 7)
+# print(users["Erik"]["lottery_numbers"])
+
+# users.update(["Erik"][1][0]: [7, 18, 20, 25, 29, 30])
+# print(users["Erik"]["lottery_numbers"])
+
+# erik_updated_lottery = users.append["Erik"]["lottery_numbers"][0], 7
+# print(erik_updated_lottery)
+
+users["Erik"]["lottery_numbers"] = [7, 18, 34, 8, 11, 24]
+print(users["Erik"]["lottery_numbers"])
 
 # 8. Change Erik's hometown to Edinburgh
 
+users["Erik"]["home_town"] = "Edinburgh"
+print(users["Erik"]["home_town"])
 
 # 9. Add a pet dog to Erik called "fluffy"
+
+
 
 
 # 10. Add another person to the users dictionary
