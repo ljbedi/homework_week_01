@@ -122,7 +122,55 @@ print(users["Erik"]["home_town"])
 
 # 9. Add a pet dog to Erik called "fluffy"
 
+# here we are going into a dictionary to create another Dictionary - {}
+# .append goes after the file you are wanting to add to ie Erik > Pets not BEFORE!!!
 
-
+users["Erik"]["pets"].append ({
+    "name" : "fluffy", 
+    "species": "dog"
+    })
+print(users["Erik"]["pets"])
 
 # 10. Add another person to the users dictionary
+
+# users.append( { < < < < ASK ABOUT APPENDING, WHERE AM I GOING WRONG!?!? 
+#     "Liam" : {
+#     "twitter" : "blygrm",
+#     "lottery_numbers" : [17, 31, 54, 30, 42, 85],
+#     "home_town": "Sheffield",
+#     "pets" : [
+    
+#         {
+#         "name" : "Storm" ,
+#         "species" : "dog"
+#     } ,
+#     {
+#         "name" : "Diesel" ,
+#         "species" : "dog"
+#     }
+#     ]
+#     })
+
+# print(users)
+
+new_user_liam = {
+    "Liam": {
+    "twitter" : "lbailey3" ,
+    "lottery_numbers" : [17, 31, 54, 30, 42, 85],
+    "home_town": "Sheffield",
+    "pets" : [
+        {
+        "name" : "Storm" ,
+        "species" : "dog"
+    } ,
+    {
+        "name" : "Diesel" ,
+        "species" : "dog"
+    }
+    ]
+    }
+}
+
+users["Liam"] = new_user_liam
+print(users)
+print(users["Liam"])
