@@ -76,10 +76,31 @@ print(users["Avril"]["pets"][0]["species"])
 
 # 5. Get the smallest of Erik's lottery numbers
 
-
-
+erik_lowest_lottery = min(users["Erik"]["lottery_numbers"])
+print(erik_lowest_lottery)
+      
+# TO FIND THE MINIMUM - MIN
 
 # 6. Return an list of Avril's lottery numbers that are even
+
+avril_lottery_numbers = users["Avril"]["lottery_numbers"]
+avril_even_numbers = []
+
+for number in avril_lottery_numbers:
+    if number % 2 == 0:
+        avril_even_numbers.append(number)
+
+print(avril_even_numbers)
+
+# What are we doing? We are wanting even lottery numbers, where do we get the numbers from? Path to the source
+# avril_lottery_numbers FROM users > Avril > Lottery numbers.
+# Now we have told where we want the loop to look, we need to say we want the even numbers from it. 
+# DEFINE THAT > avil_even_numbers (needs a value to add to) - () or []?? 
+# We have to give it a value out of the loop = 0? THIS WILL THEN BE FILLED WITH VALUES AS THE LOOP RUNS?? 
+# LOOP - for every even number in the list, add it to our list of even numbers (avril_even_numbers = []? append?
+# So we need the loop to check for even? number % 2 == 0. if they are even then add to our list of even numbers, list 
+# them together and then print them off 
+
 
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
