@@ -172,7 +172,7 @@ new_user_liam = {
 }
 
 users["Liam"] = new_user_liam
-print(users)
+# print(users)
 print(users["Liam"])
 
 
@@ -187,7 +187,8 @@ def evens(nums_list):
          if num % 2 == 0:
             print(num, end=" ")
 
-evens(numbers)
+new_evens = evens(numbers)
+print(new_evens)
 
 # how to get rid of modulus sign??? 
 
@@ -197,9 +198,18 @@ evens(numbers)
 
 # print(even_integers)
 
-
-
 # 2. Print the difference between the largest and smallest value:
+
+# return/print the difference between the lowest and highest value 1 and 99 [index 0 and 8]
+
+# def diff_high_to_low(num):
+#     for num in numbers: 
+#         # COMMAND FOR DIFF IN HIGHEST AND LOWEST VALUE? 
+#         # RETURN THE VALUE AND LOOP -  DIFFERENCE BETWEEN 0 AND 8
+
+
+      
+# print(diff_high_to_low)
 
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
@@ -210,6 +220,8 @@ evens(numbers)
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 
+del numbers[1:4]
+print(sum(numbers))
 
 # 5. HARD! Print the sum of the numbers. 
 #    Except the number 13 is very unlucky, so it does not count.
