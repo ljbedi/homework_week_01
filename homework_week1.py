@@ -200,6 +200,10 @@ print(new_evens)
 
 # 2. Print the difference between the largest and smallest value:
 
+
+
+
+
 # return/print the difference between the lowest and highest value 1 and 99 [index 0 and 8]
 
 # def diff_high_to_low(num):
@@ -213,6 +217,21 @@ print(new_evens)
 
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
+
+
+
+# def equal2(numbers):
+#     return numbers[:1] == numbers[2:]
+#     if num == 2 :
+#         numbers = True 
+    
+# equal2(numbers)
+
+# for num in numbers:
+#     if num == (2, 2):
+#         print(True)
+
+# print(num)
 
 
 # 4. Print the sum of the numbers, 
@@ -229,3 +248,18 @@ print(sum(numbers))
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5. 
+
+numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
+new_numbers = numbers[0:6-9]
+
+total = 0
+
+for num in new_numbers: 
+    total =total+num
+print(total)
+
+# for num in numbers: 
+#     if num <= 12
+# new_numbers = sum(numbers)
+# print(new_numbers)
+
